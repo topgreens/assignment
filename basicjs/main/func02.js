@@ -21,7 +21,7 @@ class Main {
             return greetings;
         }
 
-        var thegreetings = sayBye("Spanish:'adios'<br/>", "English:'goodbye'<br/>", "Arabic:'wadaeaan',<br/>");
+        var thegreetings = sayBye("Spanish:'adios' '<br/>' ", "English:'goodbye' '<br/>' ", "Arabic:'wadaeaan', '<br/>'");
         console.log(thegreetings);
 
 
@@ -29,24 +29,44 @@ class Main {
         //Exercise III.
 
         function sayHi() {
-            alert('first function');
+            console.log('first function');
         }
 
         function sayBye() {
-            alert('second function');
+            console,log('second function');
         }
 
         function prev() {
             sayHi();
             sayBye();
         }
-        prev('result1' && 'result2');
+        prev();
 
 
         // Exercise IV.
+        
+       
+function language(greetings) {
+    const spanish = 'hola';
+    const english = 'hi';
+    const arabic = 'merhaba';
 
-      
-
+    if (greetings === 'spanish'){
+        return spanish;
+    }
+    if (greetings === 'english') {
+        return hi;
+    }
+    if (greetings === arabic) {
+        return marhaaba;
+    }
+    else{
+        alert('unsupported language')
+    }
+     
+    
+}
+language('salut');
     }
 }
 new Main().execute();
