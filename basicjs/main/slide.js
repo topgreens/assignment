@@ -71,58 +71,73 @@ class Main {
         var squareOfFive = square(5); // squareOfFive equals '25'
 
 
+        // Slide Exercise. Make a variable called "temperature". Write some code that tells you to put on a coat if it is below 50 degrees.
+
+        let temperature = 50;
+
+        if (temperature <= 45) {
+            console.log("Wear a coat! ");
+        } else if (temperature <= 30) {
+            console.log("You need a rain jacket and a hat.");
+        } else if (temperature <= 0) {
+            console.log("stay inside.");
+        } else {
+            console.log("Wear what you have on.");
+        }
+
+
+
         // Exercise II, Build an array, build a function that uses this array, return a result, and call it. 
 
-      
-        let donuts = [
+
+        let donuts = [{
+                id: 1,
+                item: 'chocolate frosted',
+                isAvailable: true
+
+            },
             {
-           id: 1,
-           item: 'chocolate frosted',
-           isAvailable: true
-           
-           },
-           {
-           id: 2,
-           item: 'Boston cream',
-           isAvailable: true
-           
-           },
-           {
-           id: 3,
-           item: 'sprinkled',
-           isAvailable: false
-           
-           },
-           {
-           id: 4,
-           item: 'glazed',
-           isAvailable: true
-           
-           },
-           {
-           id: 5,
-           item: 'coconut',
-           isAvailable: true
-           
-           },
-           {
-           id: 6,
-           item: 'powdered',
-           isAvailable: false
-           
-           },
-           
-           ];
-           
-           donuts.forEach(function(donut){
-              console.log(donut.item);
-           });
-           
-           
-           const donutAvailable = donuts.filter(function(donut){
-               return donut.isAvailable === true;
-           });
-           console.log(donutAvailable);
+                id: 2,
+                item: 'Boston cream',
+                isAvailable: true
+
+            },
+            {
+                id: 3,
+                item: 'sprinkled',
+                isAvailable: false
+
+            },
+            {
+                id: 4,
+                item: 'glazed',
+                isAvailable: true
+
+            },
+            {
+                id: 5,
+                item: 'coconut',
+                isAvailable: true
+
+            },
+            {
+                id: 6,
+                item: 'powdered',
+                isAvailable: false
+
+            },
+
+        ];
+
+        donuts.forEach(function (donut) {
+            console.log(donut.item);
+        });
+
+
+        const donutAvailable = donuts.filter(function (donut) {
+            return donut.isAvailable === true;
+        });
+        console.log(donutAvailable);
 
 
     }
