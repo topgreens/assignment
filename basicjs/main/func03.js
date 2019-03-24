@@ -13,12 +13,8 @@ class Main {
         // Exercise II.
         const cities = ['Paris', 'Madrid', 'Barcelona', 'London', 'Berlin'];
 
-        function getCity(num) {
-            return [num];
-            let i = 0;
-            for (let i = 0; i < cities.length; i++) {
-                const num = num[i];
-            }
+        function getCity(idx) {
+            return cities [idx];
         }
         console.log(cities[4]);
         getCity();
@@ -27,11 +23,18 @@ class Main {
 
         const cities = ['Paris', 'Madrid', 'Barcelona', 'London', 'Berlin'];
 
-        function countLetters(total) {
-            return total;
+        function countLetters(numb) {
+            return numb;
         }
         console.log(cities[3].length);
-        countLetters();
+        countLetters(3);
+        /*
+        function countLetter(pos){
+            let city = cities[pos];
+            return city.length;
+        } 
+        countLetter(3);
+        */ 
 
 
         // Exercise IV Paris, Madrid, Barcelona, London and  Berlin.
@@ -43,6 +46,14 @@ class Main {
         }
         console.log(cityName[2].length)
         getCityInfo('Barcelona');
+
+        /*
+        function getCityInfo(info){
+          let numb = cityName[info];
+          console.log('cityName' + pos + number of letter + )  
+        }
+        getCityInfo();
+        */
 
     }
 }
