@@ -1,6 +1,30 @@
  class Main {
      execute() {
          //this is one comment
+        const number = prompt('Enter a number') // User provides 15
+        // Check if number is divisible by 3, 5 or both
+        if (number % 3 === 0) {
+            alert('Fizz!')
+        } else {
+            alert('error, try again!');
+        }
+
+        const num = prompt('Enter a figure')
+
+        if (num % 5 === 0) {
+            alert('buzz');
+        } else {
+            alert('Your guess wrong!');
+        }
+
+
+        let number = prompt("Enter a Number");
+        if (number % 3 === 0 && number % 5 === 0) {
+            alert("Fizzbuzz!.");
+//................................................
+
+
+
          let Question = prompt('What is your name?');
          alert('I am a Commandant!');
 

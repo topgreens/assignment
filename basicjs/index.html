@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!-->
 
 <!--<![endif]-->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <script src="main/script.js"></script>
-    <script src="main/index.js"></script>
+
 </head>
 
 <body>
@@ -30,28 +30,29 @@
         secs = now.getSeconds();
         document.write("<h2>");
         document.write(hours + ":" + mins + ":" + secs);
-        document.write("</h2>");  
+        document.write("</h2>");
     </script>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
- <h1>Sorting String Arrays</h1>
-<p>Enter two or more names in the field below, and the sorted list of names will appear in the text area.</p>
-<form name=”theform”>
-Name:
-<input type=”text” name=”newname” size=”20” />
-<button type="button" value="Add" onclick='SortNames();'></button>
+    <h1>Sorting String Arrays</h1>
+    <p>Enter two or more names in the field below, and the sorted list of names will appear in the text area.</p>
+    <form name=”theform”>
+        Name:
+        <input type=”text” name=”newname” size=”20” />
+        <button type="button" value="Add" onclick='SortNames();'></button>
 
-<br/>
+        <br />
 
-<h2>Sorted Names</h2>
-<textarea cols=”60” rows=”10” name=”sorted”>
+        <h2>Sorted Names</h2>
+        <textarea cols=”60” rows=”10” name=”sorted”>
 The sorted names will appear here.
 </textarea>
-</form>
+    </form>
 
-
+    <script src="main/obj.js"></script>
+    <script src="main/index.js"></script>
 </body>
 
 </html>

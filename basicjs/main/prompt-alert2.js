@@ -1,6 +1,20 @@
 class Main {
     execute() {
         //this is one comment
+        let number = prompt("Enter a Number");
+        if (number % 3 === 0 && number % 5 === 0) {
+            alert("Fizzbuzz!.");
+
+        }else{
+           if (number %5 ===0){
+               console.log('Buzz');
+           }
+        }
+
+
+
+
+//............................................
         let character = 'actor';
         let answer = 'Jack Sparrow'
 
